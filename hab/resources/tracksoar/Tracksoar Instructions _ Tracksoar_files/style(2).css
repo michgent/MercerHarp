@@ -1,0 +1,29 @@
+/*
+Theme Name: Divi Child
+Template: Divi
+Author: Child Theme Configurator
+Version: 1.0.1444240107
+Updated: 2015-10-07 10:48:27
+*/
+
+@charset "UTF-8";
+
+/*Kickstarter button*/
+#menu-item-350 {
+padding: 10px 0;
+}
+
+#menu-item-350 a {
+color: #ffffff;
+border-color: #000000;
+border: 1px #ffffff;
+background-color: #33cc33;
+padding: 10px 15px !important;
+display: inline-block;
+border-radius: 3px;
+}
+
+#menu-item-350 a:hover
+{
+background: #009933;
+}

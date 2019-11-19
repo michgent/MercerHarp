@@ -1,0 +1,48 @@
+.wew-notification-action_wrapper{
+	padding:0px 0 20px 0;
+}
+.single-product div.product form.cart div.wew-notification-action_wrapper .button {
+	float:none;
+}
+
+.wew-notification-action_wrapper img {
+	vertical-align:middle;
+	margin-left:5px;
+	display:inline-block;
+	visibility:hidden;
+}
+
+.wew-unsubscribe-wrapper{
+	padding:5px 20px;
+}
+
+.waitlist-content{
+	height:auto !important;
+}
+
+.author-waitlist{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	overflow: auto;
+}
+
+#author-waitlist-table{
+	width: 100%;
+}
+
+#author-waitlist-table td,
+#author-waitlist-table th{
+	border-bottom: 1px solid auto;
+	padding:10px 5px;
+	font-size: 0.98em;
+}
+
+#author-waitlist-table th{
+	padding:3px 5px;
+}
+
+#author-waitlist-table .check-column input{
+	margin-top:8px;
+	margin-bottom:8px;
+}

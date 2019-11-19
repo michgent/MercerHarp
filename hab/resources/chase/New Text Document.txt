@@ -1,0 +1,103 @@
+sudo python3 -m pip install pynmea2
+sudo python3 -m pip install cython
+sudo apt-get install proj-bin
+sudo python3 -m pip install pyproj==1.9.6
+
+to mkae bash script:
+make scriptname.sh file
+at top do #!/bin/bash
+
+make exe: sudo chmod +x scriptname.sh
+run by sh scriptname.sh or ./scriptname.sh
+
+
+sdr stuff:
+
+sudo apt-get install rtl-sdr
+
+# Install dependencies
+sudo apt-get update
+sudo apt-get -y install git cmake build-essential libusb-1.0 qt4-qmake libpulse-dev libx11-dev
+
+# Fetch and compile rtl-sdr source
+mkdir -p ~/src/
+cd ~/src/
+git clone git://git.osmocom.org/rtl-sdr.git
+cd rtl-sdr
+mkdir build
+cd build
+cmake ../ -DINSTALL_UDEV_RULES=ON
+make
+sudo make install
+sudo ldconfig
+
+# Fetch and compile multimonNG
+cd ~/src/
+git clone https://github.com/EliasOenal/multimonNG.git
+cd multimonNG
+mkdir build
+cd build
+qmake ../multimon-ng.pro
+make
+sudo make install
+
+
+
+pi@raspberrypi ~ $ sudo raspi-config
+# Choose option 1 to "Expand Filesystem" - Ensures that all of the SD card storage is available to the OS
+# Choose Finish & reboot
+
+pi@raspberrypi ~ $ sudo apt-get update
+pi@raspberrypi ~ $ sudo apt-get upgrade
+pi@raspberrypi ~ $ cat <<EOF >no-rtl.conf
+blacklist dvb_usb_rtl28xxu
+blacklist rtl2832
+blacklist rtl2830
+EOF
+pi@raspberrypi ~ $ sudo mv no-rtl.conf /etc/modprobe.d/
+
+pi@raspberrypi ~ $ sudo apt-get install git-core
+pi@raspberrypi ~ $ sudo apt-get install git
+pi@raspberrypi ~ $ sudo apt-get install cmake
+pi@raspberrypi ~ $ sudo apt-get install libusb-1.0-0-dev
+pi@raspberrypi ~ $ sudo apt-get install build-essential
+
+pi@raspberrypi ~ $ git clone git://git.osmocom.org/rtl-sdr.git
+pi@raspberrypi ~ $ cd rtl-sdr/
+pi@raspberrypi ~/rtl-sdr $ mkdir build
+pi@raspberrypi ~/rtl-sdr $ cd build
+pi@raspberrypi ~/rtl-sdr/build $ cmake ../ -DINSTALL_UDEV_RULES=ON
+pi@raspberrypi ~/rtl-sdr/build $ make
+pi@raspberrypi ~/rtl-sdr/build $ sudo make install
+pi@raspberrypi ~/rtl-sdr/build $ sudo ldconfig
+pi@raspberrypi ~/rtl-sdr/build $ cd ~
+pi@raspberrypi ~ $ sudo cp ./rtl-sdr/rtl-sdr.rules /etc/udev/rules.d/
+pi@raspberrypi ~ $ sudo reboot
+
+pi@raspberrypi ~ $ rtl_test
+Found 1 device(s):
+  0:  Generic, RTL2832U, SN: 77771111153705700
+
+Using device 0: Generic RTL2832U
+Found Rafael Micro R820T tuner
+Supported gain values (29): 0.0 0.9 1.4 2.7 3.7 7.7 8.7 12.5 14.4 15.7 16.6 19.7 20.7 22.9 25.4 28.0 29.7 32.8 33.8 36.4 37.2 38.6 40.2 42.1 43.4 43.9 44.5 48.0 49.6
+Sampling at 2048000 S/s.
+
+Info: This tool will continuously read from the device, and report if
+samples get lost. If you observe no further output, everything is fine.
+
+Reading samples in async mode...
+
+pi@raspberrypi ~ $ sudo apt-get install libasound-dev
+pi@raspberrypi ~ $ sudo apt-get install libpulse-dev
+
+pi@raspberrypi ~ $ wget  http://www.aishub.net/downloads/aisdecoder-1.0.0.tar.gz
+pi@raspberrypi ~ $ tar zxvf aisdecoder-1.0.0.tar.gz
+pi@raspberrypi ~ $ cd aisdecoder-1.0.0/
+pi@raspberrypi ~/aisdecoder-1.0.0 $ mkdir build
+pi@raspberrypi ~/aisdecoder-1.0.0 $ cd build/
+pi@raspberrypi ~/aisdecoder-1.0.0/build $ cmake ../ -DCMAKE_BUILD_TYPE=Release
+pi@raspberrypi ~/aisdecoder-1.0.0/build $ make
+pi@raspberrypi ~/aisdecoder-1.0.0/build $ sudo cp aisdecoder /usr/local/bin
+pi@raspberrypi ~/aisdecoder-1.0.0/build $ cd ~
+pi@raspberrypi ~ $

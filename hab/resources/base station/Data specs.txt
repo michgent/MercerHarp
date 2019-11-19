@@ -1,0 +1,71 @@
+
+
+Sensor
+------------
+        format=   {
+                    "Type":"SR",
+                    "Sensor":self.name,
+                    "Time":"",
+                    "Temperature":"",
+                    "Pressure":""
+                        }
+
+gps
+-----------
+self.gpsdict={
+            "Alt":"",
+            "Lat":"",
+            "Long":"",
+            "Sat":"",
+            "GPSTime":"",
+            "Quality":"NA"           
+            }
+
+sensor
+----------------
+sensordict={"sensorname","Jsonsensorstring"}
+
+sensorlist=["GPS","MCPBMPCPU"]
+
+
+Main
+----------------
+     self.MainRead3={
+                     "Type":"Main",
+                     "Settings":{"currentclocktime":"", "currentdate":"", "cutdownarmed":"False", "GPSstate":{"GPSTime":0, "Lat":0, "Long":0, "Alt":0, "Sats":0}}, 
+                     "GPS":{"Alt":"", "Lat":"", "Long":""},
+                     "Sensorslist": [{"Sensor": "Name", "Data": "Jsonsensorstring"},{}]                 
+                     }
+
+
+
+Arduino
+----------------
+<___.___,___.___>\n
+elevation,azimuth in degrees from -90 to 90
+
+
+
+commands
+--------------------
+        self.command=   {   
+                        "Type":"COMMAND",
+                        "Action":"",
+                        "Data":""
+                        }
+        self.command=   {   
+                        "Type":"COMMAND",
+                        "Action":"SETTIME",
+                        "Data":"HH:mm:ss---yyyyMMdd"
+                        }
+        self.command=   {   
+                        "Type":"COMMAND",
+                        "Action":"SETTIMEOWN",
+                        "Data":""
+                        }
+        self.command=   {   
+                        "Type":"COMMAND",
+                        "Action":"CUTNOW",
+                        "Data":""
+                        }
+

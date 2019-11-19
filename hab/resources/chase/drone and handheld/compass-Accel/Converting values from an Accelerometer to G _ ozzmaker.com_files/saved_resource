@@ -1,0 +1,326 @@
+/*
+Welcome to Custom CSS!
+
+CSS (Cascading Style Sheets) is a kind of code that tells the browser how
+to render a web page. You may delete these comments and get started with
+your customizations.
+
+By default, your stylesheet will be loaded after the theme stylesheets,
+which means that your rules can take precedence and override the theme CSS
+rules. Just write here what you want to change, you don't need to copy all
+your theme's stylesheet content.
+*/
+div.bash {
+	background-color: black;
+	color: #bbbbbb;
+	border-left: 3px solid #000000;
+	font-family: "Courier New", monospace !important;
+	width: 770px;
+	font-size: 13px;
+	padding: 5px;
+/*old = 10*/
+	margin-bottom: 10px !important;
+}
+
+div.nggcenter {
+	padding-bottom: 20px;
+	width: 450px;
+	margin: 0 auto;
+}
+
+div.oled {
+	width: 400px;
+}
+
+div.cisco {
+	background-color: #dbdbdb;
+	border-left: 3px solid #000000;
+	font-size: 13px;
+	font-family: "Courier New", monospace;
+	width: 770px;
+	font-size: 13px;
+	padding: 10px;
+	margin: 1px;
+	line-height: 118%;
+}
+
+.site-navigation, .entry-title, .entry-header a {
+	text-transform: none;
+}
+
+.list-view #content .hentry.has-post-thumbnail {
+	border-top: 1px solid rgba(0,0,0,0.1);
+	padding-top: 48px;
+}
+
+.smallmargin {
+	margin-bottom: 0 !important;
+}
+
+/*below is for feature grid on front page */
+.grid .featured-content .entry-header {
+	border-width: 5px 3px !important;
+}
+
+.featured-content .cat-links {
+	display: none;
+}
+
+.grid .featured-content .entry-header {
+	height: 100px !important;
+}
+
+.featured-content .post-thumbnail {
+	padding-top: 50% !important;
+}
+
+/*
+	CSS Migrated from Jetpack:
+*/
+
+/*
+Welcome to Custom CSS!
+
+CSS (Cascading Style Sheets) is a kind of code that tells the browser how
+to render a web page. You may delete these comments and get started with
+your customizations.
+
+By default, your stylesheet will be loaded after the theme stylesheets,
+which means that your rules can take precedence and override the theme CSS
+rules. Just write here what you want to change, you don't need to copy all
+your theme's stylesheet content.
+*/
+div.bash {
+	background-color: black;
+	color: #bbbbbb;
+	border-left: 3px solid #000000;
+	font-family: "Courier New", monospace !important;
+	width: 770px;
+	font-size: 13px;
+	padding: 5px;
+/*old = 10*/
+	margin-bottom: 10px !important;
+}
+
+div.nggcenter {
+	padding-bottom: 20px;
+	width: 450px;
+	margin: 0 auto;
+}
+
+div.oled {
+	width: 400px;
+}
+
+div.cisco {
+	background-color: #dbdbdb;
+	border-left: 3px solid #000000;
+	font-size: 13px;
+	font-family: "Courier New", monospace;
+	width: 770px;
+	font-size: 13px;
+	padding: 10px;
+	margin: 1px;
+	line-height: 118%;
+}
+
+.site-navigation, .entry-title, .entry-header a {
+	text-transform: none;
+}
+
+.list-view #content .hentry.has-post-thumbnail {
+	border-top: 1px solid rgba(0,0,0,0.1);
+	padding-top: 48px;
+}
+
+.smallmargin {
+	margin-bottom: 0 !important;
+}
+
+/*below is for feature grid on front page */
+.grid .featured-content .entry-header {
+	border-width: 5px 3px !important;
+}
+
+.featured-content .cat-links {
+	display: none;
+}
+
+.grid .featured-content .entry-header {
+	height: 100px !important;
+}
+
+.featured-content .post-thumbnail {
+	padding-top: 50% !important;
+}
+
+/*
+	CSS Migrated from Jetpack:
+*/
+
+/*
+Welcome to Custom CSS!
+
+CSS (Cascading Style Sheets) is a kind of code that tells the browser how
+to render a web page. You may delete these comments and get started with
+your customizations.
+
+By default, your stylesheet will be loaded after the theme stylesheets,
+which means that your rules can take precedence and override the theme CSS
+rules. Just write here what you want to change, you don't need to copy all
+your theme's stylesheet content.
+*/
+div.bash {
+	background-color: black;
+	color: #bbbbbb;
+	border-left: 3px solid #000000;
+	font-family: "Courier New", monospace !important;
+	width: 770px;
+	font-size: 13px;
+	padding: 5px;
+/*old = 10*/
+	margin-bottom: 10px !important;
+}
+
+div.nggcenter {
+	padding-bottom: 20px;
+	width: 450px;
+	margin: 0 auto;
+}
+
+div.oled {
+	width: 400px;
+}
+
+div.cisco {
+	background-color: #dbdbdb;
+	border-left: 3px solid #000000;
+	font-size: 13px;
+	font-family: "Courier New", monospace;
+	width: 770px;
+	font-size: 13px;
+	padding: 10px;
+	margin: 1px;
+	line-height: 118%;
+}
+
+.site-navigation, .entry-title, .entry-header a {
+	text-transform: none;
+}
+
+.list-view #content .hentry.has-post-thumbnail {
+	border-top: 1px solid rgba(0,0,0,0.1);
+	padding-top: 48px;
+}
+
+.smallmargin {
+	margin-bottom: 0 !important;
+}
+
+/*below is for feature grid on front page */
+.grid .featured-content .entry-header {
+	border-width: 5px 3px !important;
+}
+
+.featured-content .cat-links {
+	display: none;
+}
+
+.grid .featured-content .entry-header {
+	height: 100px !important;
+}
+
+.featured-content .post-thumbnail {
+	padding-top: 50% !important;
+}
+
+.single-post .entry-date,
+.single-post .byline,
+.archive .entry-date,
+.archive .byline {
+  display:none;
+}
+
+/*
+	CSS Migrated from Jetpack:
+*/
+
+/*
+Welcome to Custom CSS!
+
+CSS (Cascading Style Sheets) is a kind of code that tells the browser how
+to render a web page. You may delete these comments and get started with
+your customizations.
+
+By default, your stylesheet will be loaded after the theme stylesheets,
+which means that your rules can take precedence and override the theme CSS
+rules. Just write here what you want to change, you don't need to copy all
+your theme's stylesheet content.
+*/
+div.bash {
+	background-color: black;
+	color: #bbbbbb;
+	border-left: 3px solid #000000;
+	font-family: "Courier New", monospace !important;
+	width: 770px;
+	font-size: 13px;
+	padding: 5px;
+/*old = 10*/
+	margin-bottom: 10px !important;
+}
+
+div.nggcenter {
+	padding-bottom: 20px;
+	width: 450px;
+	margin: 0 auto;
+}
+
+div.oled {
+	width: 400px;
+}
+
+div.cisco {
+	background-color: #dbdbdb;
+	border-left: 3px solid #000000;
+	font-size: 13px;
+	font-family: "Courier New", monospace;
+	width: 770px;
+	font-size: 13px;
+	padding: 10px;
+	margin: 1px;
+	line-height: 118%;
+}
+
+.site-navigation, .entry-title, .entry-header a {
+	text-transform: none;
+}
+
+.list-view #content .hentry.has-post-thumbnail {
+	border-top: 1px solid rgba(0,0,0,0.1);
+	padding-top: 48px;
+}
+
+.smallmargin {
+	margin-bottom: 0 !important;
+}
+
+/*below is for feature grid on front page */
+.grid .featured-content .entry-header {
+	border-width: 5px 3px !important;
+}
+
+.featured-content .cat-links {
+	display: none;
+}
+
+.grid .featured-content .entry-header {
+	height: 100px !important;
+}
+
+.featured-content .post-thumbnail {
+	padding-top: 50% !important;
+}
+
+
+.post-navigation {display:none;}
+
